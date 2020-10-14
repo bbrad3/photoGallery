@@ -1,0 +1,120 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), color-stop(85%, #425d6f), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(180deg, #fdfdfd 0%, #425d6f 85%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0.6em 0;
+  font-family: 'Poppins', sans-serif;
+  font-stretch: expanded;
+}
+
+section.album {
+  padding-top: 0.6em;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+img {
+  max-width: 30%;
+  height: auto;
+  margin: 0.5em 0.1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fullScreen {
+  background: radial-gradient(circle, #425d6f 0%, black 25%, rgba(66, 93, 111, 0.9) 100%);
+  z-index: 1;
+  position: fixed;
+  top: 2vh;
+  left: 1.1vw;
+  width: 96vw;
+  height: 96vh;
+  text-align: center;
+  border-radius: 0.2em;
+}
+
+.fullScreen .fullImg {
+  height: 90%;
+  width: auto;
+  max-width: 90%;
+}
+
+.fullScreen .imgDiv {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+.fullScreen .closeBtn {
+  font-size: 1.2rem;
+  color: white;
+  background: none;
+  border: none;
+  position: fixed;
+  top: 8%;
+  right: 5%;
+  -webkit-transition: font-size 300ms, -webkit-transform 300ms;
+  transition: font-size 300ms, -webkit-transform 300ms;
+  transition: transform 300ms, font-size 300ms;
+  transition: transform 300ms, font-size 300ms, -webkit-transform 300ms;
+}
+
+.fullScreen .closeBtn:hover {
+  font-size: 1.5rem;
+  -webkit-transform: translate(2px, -5px);
+          transform: translate(2px, -5px);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 45%;
+    height: auto;
+    margin: 0.5em 0.1em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  img {
+    max-width: 90%;
+    margin-bottom: 5px;
+    height: auto;
+    margin: 0.5em 0.1em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header h1 {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
